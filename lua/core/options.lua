@@ -62,10 +62,10 @@ local disabled_built_ins = {
    "getscriptPlugin",
    "gzip",
    "logipat",
-   "netrw",
-   "netrwPlugin",
-   "netrwSettings",
-   "netrwFileHandlers",
+   -- "netrw",
+   -- "netrwPlugin",
+   -- "netrwSettings",
+   -- "netrwFileHandlers",
    "matchit",
    "tar",
    "tarPlugin",
@@ -83,6 +83,12 @@ local disabled_built_ins = {
    "bugreport",
    "ftplugin",
 }
+
+g.netrw_winsize = 25
+g.netrw_banner = 0
+g.netrw_localcopydircmd = 'cp -r'
+g.netrw_browse_split = 1
+
 
 for _, plugin in pairs(disabled_built_ins) do
    g["loaded_" .. plugin] = 1

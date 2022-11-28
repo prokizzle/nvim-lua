@@ -6,9 +6,6 @@ Website: https://github.com/brainfucksec/neovim-lua
 
 --]]
 
--- set node version
-vim.g.coc_node_path = '/Users/nickprokesch/.nvm/versions/node/v16.16.0/bin/node'
-
 -- Import Lua modules
 require('packer_init')
 require('core/options')
